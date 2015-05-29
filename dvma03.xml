@@ -1,27 +1,27 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="30" inline="true" x="14" y="76">
+  <block type="controls_repeat" id="1" inline="true" x="14" y="76">
     <value name="TIMES">
-      <block type="math_number" id="39">
+      <block type="math_number" id="2">
         <field name="NUM">10</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="multimedia_playwav" id="7">
+      <block type="multimedia_playwav" id="3">
         <field name="WAV">_SndTest</field>
         <next>
-          <block type="robot_delay" id="9" inline="true">
+          <block type="robot_delay" id="4" inline="true">
             <value name="DELAY">
-              <block type="math_number" id="16">
+              <block type="math_number" id="5">
                 <field name="NUM">1000</field>
               </block>
             </value>
             <next>
-              <block type="multimedia_playwav" id="23">
+              <block type="multimedia_playwav" id="6">
                 <field name="WAV">_start</field>
                 <next>
-                  <block type="robot_delay" id="31" inline="true">
+                  <block type="robot_delay" id="7" inline="true">
                     <value name="DELAY">
-                      <block type="math_number" id="32">
+                      <block type="math_number" id="8">
                         <field name="NUM">3000</field>
                       </block>
                     </value>
