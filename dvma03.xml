@@ -1,19 +1,37 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="multimedia_playwav" id="7" x="65" y="104">
-    <field name="WAV">_SndTest</field>
-    <next>
-      <block type="robot_delay" id="9" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="16">
-            <field name="NUM">1000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="30" inline="true" x="14" y="76">
+    <value name="TIMES">
+      <block type="math_number" id="39">
+        <field name="NUM">10</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="multimedia_playwav" id="7">
+        <field name="WAV">_SndTest</field>
         <next>
-          <block type="multimedia_playwav" id="23">
-            <field name="WAV">_start</field>
+          <block type="robot_delay" id="9" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="16">
+                <field name="NUM">1000</field>
+              </block>
+            </value>
+            <next>
+              <block type="multimedia_playwav" id="23">
+                <field name="WAV">_start</field>
+                <next>
+                  <block type="robot_delay" id="31" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="32">
+                        <field name="NUM">3000</field>
+                      </block>
+                    </value>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
